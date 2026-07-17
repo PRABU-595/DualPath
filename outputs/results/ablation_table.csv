@@ -1,0 +1,8 @@
+Configuration,CHAIR_i (%) ↓,Object Recall (%) ↑,POPE F1 (%) ↑,POPE Precision (%) ↑
+Vanilla VLM (Qwen2.5-VL-7B),25.0,21.0,85.3,78.2
+Vanilla VLM + Threshold Shift,13.5,4.1,62.4,95.6
+Pathway F only,13.9,10.2,84.1,88.7
+Pathway O only,29.5,26.3,81.2,74.5
+DualPath (Fixed Linear Weighting),18.4,18.2,86.9,89.1
+DualPath (No Phase 3 LoRA),16.0,19.5,87.5,91.0
+DualPath-VLM (Full learned),13.2,25.4,92.1,95.6

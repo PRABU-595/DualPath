@@ -1,0 +1,14 @@
+# Virtual Environments and Python Cache
+venv/
+__pycache__/
+*.pyc
+
+# Massive outputs and checkpoints (Over 100MB)
+outputs/checkpoints/*.pt
+outputs/checkpoints/*.safetensors
+outputs/laptop_checkpoints/
+zip/
+
+# OS specific files
+.DS_Store
+Thumbs.db

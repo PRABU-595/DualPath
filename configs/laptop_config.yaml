@@ -1,0 +1,22 @@
+# DualPath-VLM Laptop Training Configuration
+
+model:
+  hidden_size: 3584  # Qwen2.5-VL-7B hidden dimension (4096 for Llama, 3584 for Qwen)
+
+training:
+  epochs: 300
+  batch_size: 128    # High batch size is possible because we only train tiny heads
+  lr: 0.001          # Higher learning rate for rapid head training
+  weight_decay: 0.001 # Stronger regularization for laptop iteration
+  early_stop_patience: 15
+  mixed_precision: "no" # CPU/MPS usually better with float32/float16 than bf16
+
+loss:
+  lambda_f: 1.0
+  lambda_o: 1.0
+  lambda_g: 0.2        # Slightly stronger gating regularization for long training
+
+paths:
+  checkpoint_dir: "./outputs/laptop_checkpoints"
+  results_dir: "./outputs/results"
+  log_dir: "./outputs/logs"

@@ -1,0 +1,16 @@
+torch>=2.2.0
+torchvision
+transformers>=4.40.0
+peft>=0.10.0
+datasets
+accelerate>=0.28.0
+spacy>=3.7.0
+opencv-python
+matplotlib
+seaborn
+pyyaml
+tqdm
+typing-extensions
+Pillow
+qwen-vl-utils
+bitsandbytes>=0.43.0
